@@ -1,0 +1,19 @@
+body{
+  color:rgb(4, 136, 21);
+  background-color: rgba(0, 0, 0, 1);;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  overflow:hidden;
+  -webkit-user-select: none;
+}
+.notselectable{
+  -webkit-user-select: none;
+}
+@font-face {
+  font-family: "Gtek";
+  src: url(Gtek_Font.ttf) format("truetype");
+}
+span{
+  line-height: 3vh;
+}

@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Warning</title>
+    <link rel="stylesheet" href="font-awesome-4.6.3\css\font-awesome.min.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td style="width:35vw; height:80vh;padding:0">
+                <center>
+                  <i class="fa fa-info-circle fa-5x" aria-hidden="true" style="font-size:35vh; color:rgb(16, 12, 214)"></i>
+                  </center>
+            </td>
+            <td>
+                <span style="font-size:4vw" id="text">You are x minutes in the room</span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <center>
+                    <button id="close-bt">Close</button>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+</body>
+<style>
+    body {
+        background-color: rgb(255, 251, 251);
+        margin: 0;
+        -webkit-app-region: drag;
+        -webkit-user-select: none;
+        cursor: default;
+    }
+
+    button {
+        background-color: rgb(247, 175, 89);
+        height: 8vh;
+        width: 18vw;
+        border: 0;
+        cursor: pointer;
+        -webkit-app-region: no-drag;
+    }
+
+    table {
+        width: 100vw;
+        padding: 1vh;
+        height: 100vh;
+    }
+</style>
+<script type="text/javascript">
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    var foo = getParameterByName('t');
+    document.getElementById("text").innerHTML = "You are "+foo+" minutes in the room";
+</script>
+<script>
+    var remote = require('remote');
+    document.getElementById("close-bt").addEventListener("click", function(e) {
+        var window = remote.getCurrentWindow();
+        window.close();
+    });
+</script>
+</html>

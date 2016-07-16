@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>security system</title>
+    <LINK href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="bodyID" style="display:none" onkeypress="checkEnter(event)">
+    <div style="margin-top:10vh; font-family: Gtek;">
+        <center>
+            <h1 style="margin-bottom:10vh; font-size:6vh">identify</h1>
+            <div style="height:46vh">
+              <img id="fingerPrintIMG" src="fingerprint.gif" style="display: none; height:46vh" />
+              <span id="enterText" style="color:rgb(230, 85, 60);">identify yourself by clicking enter<br />then enter your fingerprint</span>
+            </div>
+        </center>
+    </div>
+    <div>
+        <center>
+            <h1 id="time" style="margin-bottom:10vh; font-size:7vh"></h1>
+        </center>
+    </div>
+</body>
+<script>
+    //settings - in seconds
+    var timeTillStart = 1 //was 30
+    var timerLength = 1; //was 30
+    //----------------------------------------
+    var remote = require('remote');
+
+    var isActive = false;
+
+    function closeScreen(intre) {
+        clearInterval(intre);
+        //var window = remote.getCurrentWindow();
+        //window.close();
+        window.location = "desktop.html";
+    }
+
+    function playAlarm() {
+        var audio = new Audio('alarm.mp3');
+        audio.loop = true;
+        audio.play();
+    }
+
+    function start() {
+        isActive = true;
+        playAlarm();
+        document.getElementById("bodyID").style.display = "";
+        display = document.querySelector('#time');
+        startTimer(timerLength, display);
+    }
+
+    setTimeout(function() {
+        start();
+    }, (timeTillStart * 1000));
+
+    var stopClock = false;
+    function checkEnter(e)
+    {
+        if(e.keyCode == 13 && isActive)
+        {
+            //hide text
+            document.getElementById("enterText").style.display = "none";
+            stopClock = true;
+            //show gif
+            document.getElementById("fingerPrintIMG").style.display = "";
+            //wait duration
+            setTimeout(function() {
+                //hide gif and show text "Access Denied"
+                document.getElementById("fingerPrintIMG").style.display = "none";
+                document.getElementById("enterText").innerHTML = "access denied";
+                document.getElementById("enterText").style.fontSize  = "5vh";
+                document.getElementById("enterText").style.display = "";
+                setTimeout(function() {
+                    closeScreen(null);
+                }, (5000));
+            }, (19000));
+        }
+    }
+
+    function startTimer(duration, display) {
+        var timer = duration,
+            minutes, seconds;
+        var intrevalTimer = setInterval(function() {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.innerHTML = minutes + ":" + seconds;
+
+            if (--timer < 0) {
+                closeScreen(intrevalTimer);
+            }
+            if(stopClock)
+            {
+              clearInterval(intrevalTimer);
+            }
+        }, 1000);
+    }
+</script>
+</html>

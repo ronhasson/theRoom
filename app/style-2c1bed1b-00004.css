@@ -1,0 +1,399 @@
+body
+{
+	background: #000000;
+	color: #EFEFEF;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 0px 10px 10px 10px;
+	padding: 0px;
+}
+a:link, body_alink
+{
+	color: #EFEFEF;
+	text-decoration: none;
+}
+a:visited, body_avisited
+{
+	color: #EFEFEF;
+	text-decoration: none;
+}
+a:hover, a:active, body_ahover
+{
+	color: #315E99;
+	text-decoration: none;
+}
+.page
+{
+	background: #FFFFFF;
+	color: #323232;
+}
+.page a:link, .page_alink
+{
+	color: #323232;
+	text-decoration: none;
+}
+.page a:visited, .page_avisited
+{
+	color: #323232;
+	text-decoration: none;
+}
+.page a:hover, .page a:active, .page_ahover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+td, th, p, li
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.tborder
+{
+	background: #FFFFFF;
+	color: #323232;
+	border: 1px solid #C4C4C4;
+}
+.tcat
+{
+	background: #254774 url(../../images/math/gradients/cat_back.gif) repeat-x top left;
+	color: #FFFFFF;
+	font: bold 13px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.tcat a:link, .tcat_alink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.tcat a:visited, .tcat_avisited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.tcat a:hover, .tcat a:active, .tcat_ahover
+{
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.thead
+{
+	background: #CECECE;
+	color: #323232;
+	font: bold 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.thead a:link, .thead_alink
+{
+	color: #323232;
+	text-decoration: none;
+}
+.thead a:visited, .thead_avisited
+{
+	color: #323232;
+	text-decoration: none;
+}
+.thead a:hover, .thead a:active, .thead_ahover
+{
+	color: #323232;
+	text-decoration: none;
+}
+.tfoot
+{
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.tfoot a:link, .tfoot_alink
+{
+	text-decoration: none;
+}
+.tfoot a:visited, .tfoot_avisited
+{
+	text-decoration: none;
+}
+.tfoot a:hover, .tfoot a:active, .tfoot_ahover
+{
+	text-decoration: underline;
+}
+.alt1, .alt1Active
+{
+	background: #F8F8F8 url("http://mymathforum.com/images/math/gradients/alt1.gif") repeat-x left bottom;
+	color: #323232;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.alt1 a:link, .alt1_alink, .alt1Active a:link, .alt1Active_alink
+{
+	color: #323232;
+	text-decoration: none;
+}
+.alt1 a:visited, .alt1_avisited, .alt1Active a:visited, .alt1Active_avisited
+{
+	color: #323232;
+	text-decoration: none;
+}
+.alt1 a:hover, .alt1 a:active, .alt1_ahover, .alt1Active a:hover, .alt1Active a:active, .alt1Active_ahover
+{
+	color: #315E99;
+	text-decoration: underline;
+}
+.alt2, .alt2Active
+{
+	background: #EEEEEE url("http://mymathforum.com/images/math/gradients/alt2.gif") repeat-x left bottom;
+	color: #323232;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.alt2 a:link, .alt2_alink, .alt2Active a:link, .alt2Active_alink
+{
+	color: #323232;
+	text-decoration: none;
+}
+.alt2 a:visited, .alt2_avisited, .alt2Active a:visited, .alt2Active_avisited
+{
+	color: #323232;
+	text-decoration: none;
+}
+.alt2 a:hover, .alt2 a:active, .alt2_ahover, .alt2Active a:hover, .alt2Active a:active, .alt2Active_ahover
+{
+	color: #315E99;
+	text-decoration: underline;
+}
+.inlinemod
+{
+	background: #FFFFCC;
+	color: #000000;
+}
+.wysiwyg
+{
+	background: #ffffff;
+	color: #323232;
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	margin: 5px 10px 10px 10px;
+	padding: 0px;
+}
+.wysiwyg a:link, .wysiwyg_alink
+{
+	color: #315E99;
+	text-decoration: none;
+}
+.wysiwyg a:visited, .wysiwyg_avisited
+{
+	color: #315E99;
+	text-decoration: none;
+}
+.wysiwyg a:hover, .wysiwyg a:active, .wysiwyg_ahover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+textarea, .bginput
+{
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.bginput option, .bginput optgroup
+{
+	font-size: 10pt;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button
+{
+	background: #315E99;
+	color: #FFFFFF;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	border:none;
+	cursor:pointer;
+	padding: 7px 10px 7px 10px;
+}
+select
+{
+	background: #f8f8f8;
+	color: #323232;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+option, optgroup
+{
+	font-size: 11px;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.smallfont
+{
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.time
+{
+	color: #666666;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.navbar
+{
+	color: #323232;
+	font: normal 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.highlight
+{
+	color: #FF0000;
+	font-weight: bold;
+}
+.fjsel
+{
+	background: #E5E5E5;
+	color: #323232;
+}
+.fjdpth0
+{
+	background: #DDDDDD;
+	color: #BB4E51;
+}
+.panel
+{
+	background: #e7e7e7;
+	color: #323232;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding: 10px;
+	border: 2px outset;
+}
+.panel a:link, .panel_alink
+{
+	color: #315E99;
+	text-decoration: none;
+}
+.panel a:visited, .panel_avisited
+{
+	color: #315E99;
+	text-decoration: none;
+}
+.panel a:hover, .panel a:active, .panel_ahover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+.panelsurround
+{
+	background: #e7e7e7;
+	color: #323232;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+legend
+{
+	color: #22229C;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.vbmenu_control
+{
+	background: #080808 url("http://mymathforum.com/images/math/gradients/tcat.png") repeat-x scroll left top;
+	color: #FFFFFF;
+	font: normal 12px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	padding: 8px 6px 8px 6px;
+	white-space: nowrap;
+}
+.vbmenu_control a:link, .vbmenu_control_alink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:visited, .vbmenu_control_avisited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.vbmenu_popup
+{
+	background: #EFEFEF;
+	color: #323232;
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	border: 1px solid #0B198C;
+}
+.vbmenu_option
+{
+	background: #EDF3EB;
+	color: #000000;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_option a:link, .vbmenu_option_alink
+{
+	color: #000000;
+	text-decoration: none;
+}
+.vbmenu_option a:visited, .vbmenu_option_avisited
+{
+	color: #000000;
+	text-decoration: none;
+}
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite
+{
+	background: #315E99;
+	color: #FFFFFF;
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.vbmenu_hilite a:link, .vbmenu_hilite_alink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:visited, .vbmenu_hilite_avisited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.vbmenu_hilite a:hover, .vbmenu_hilite a:active, .vbmenu_hilite_ahover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/* ***** styling for 'big' usernames on postbit etc. ***** */
+.bigusername { font-size: 14pt; }
+
+/* ***** small padding on 'thead' elements ***** */
+td.thead, th.thead, div.thead { padding: 4px; }
+
+/* ***** basic styles for multi-page nav elements */
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+
+/* ***** de-emphasized text */
+.shade, a.shade:link, a.shade:visited { color: #777777; text-decoration: none; }
+a.shade:active, a.shade:hover { color: #FF4400; text-decoration: underline; }
+.tcat .shade, .thead .shade, .tfoot .shade { color: #DDDDDD; }
+
+/* ***** define margin and font-size for elements inside panels ***** */
+.fieldset { margin-bottom: 6px; }
+.fieldset, .fieldset td, .fieldset p, .fieldset li { font-size: 11px; }
+textarea {
+background: #FFFFFF url(http://mymathforum.com/clear.gif) no-repeat bottom right;
+}
+.alt3 {
+background: #F8F8F8;
+}
+.alt3, .alt3Active
+{
+background: #F8F8F8 url("http://cdn.ducati1199.com/images/1199/gradients/alt1.gif") repeat-x left bottom;
+color: #323232;
+}
+.alt3 a:link, .alt3_alink, .alt3Active a:link, .alt3Active_alink
+{
+color: #315E99;
+text-decoration: underline;
+}
+.alt3 a:visited, .alt3_avisited, .alt3Active a:visited, .alt3Active_avisited
+{
+color: #315E99;
+text-decoration: underline;
+}
+.alt3 a:hover, .alt3 a:active, .alt3_ahover, .alt3Active a:hover, .alt3Active a:active, .alt3Active_ahover
+{
+color: #323232;
+text-decoration: underline;
+}

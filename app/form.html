@@ -1,0 +1,670 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="vBulletin" />
+    <meta name="keywords" content="Proof,Riemann,Hypothesis,hypothesis, proof, riemann,  My progress researching the distribution of prime numbers, math,help,forum,mathematics,calculus,algebra" />
+    <meta name="description" content="One thing you should know, I have been closely following the math news on the internet for a revolutionary paper, and yesterday, I found this &quot;pro" />
+    <style type="text/css" id="vbulletin_css">
+        /**
+        * vBulletin 3.8.8 Beta 4 CSS
+        * Style: 'Riemann Hypothesis'; Style ID: 4
+        */
+        @import url("style-2c1bed1b-00004.css");
+    </style>
+    <link rel="stylesheet" type="text/css" href="vbulletin_important.css?v=388b4"/>
+    <script type="text/javascript">
+ <!--
+var SESSIONURL = "";
+var SECURITYTOKEN = "guest";
+var IMGDIR_MISC = "http://mymathforum.com/images/math/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// --> </script>
+    <!--<script type="text/javascript" src="http://mymathforum.com/clientscript/vbulletin_global.js?v=388b4"></script>
+    <script type="text/javascript" src="http://mymathforum.com/clientscript/vbulletin_menu.js?v=388b4"></script>!-->
+    <style type="text/css">
+        #sttp_keywords_block h1,
+        #sttp_keywords_block h2,
+        #sttp_keywords_block h3,
+        #sttp_keywords_block h4,
+        #sttp_keywords_block h5,
+        #sttp_keywords_block h6 {
+            display: inline;
+            font-weight: bold;
+        }
+
+        #sttp_keywords_block h1 {
+            font-size: 10pt;
+        }
+
+        #sttp_keywords_block h2 {
+            font-size: 9pt;
+        }
+
+        #sttp_keywords_block h3 {
+            font-size: 9pt;
+        }
+
+        #sttp_keywords_block h4 {
+            font-size: 9pt;
+        }
+
+        #sttp_keywords_block h5 {
+            font-size: 9pt;
+        }
+
+        #sttp_keywords_block h6 {
+            font-size: 9pt;
+        }
+
+        #sttp_keywords_block a {
+            text-decoration: underline;
+        }
+
+            #sttp_keywords_block a:hover {
+                text-decoration: underline;
+            }
+
+        #sttp_keywords_block.inner {
+            padding: 10px 15px;
+        }
+
+        #sttp-cse-notice {
+            padding: 5px 10px;
+            padding-left: 25px;
+            font-size: 8pt;
+            border: 1px solid #ccc;
+            background: #fff6ef url("http://mymathforum.com/images/math/i/exclamation.png") no-repeat 4px center;
+            margin: 0 5px;
+            margin-top: 15px;
+        }
+
+        #sstp-cse-notice.inner {
+            margin: 0 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <title> My progress researching the distribution of prime numbers - Riemann Hypothesis</title>
+    <script type="text/javascript" src="http://mymathforum.com/clientscript/vbulletin_post_loader.js?v=388b4"></script>
+    <style type="text/css" id="vbulletin_showthread_css">
+        <!--
+
+        #tag_edit_list {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+            #tag_edit_list li {
+                float: left;
+                display: block;
+                width: 200px;
+            }
+
+                #tag_edit_list li.mine {
+                    font-weight: bold;
+                }
+
+        #links div {
+            white-space: nowrap;
+        }
+
+        #links img {
+            vertical-align: middle;
+        }
+        -->
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: {extensions: ["cancel.js"]},
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+
+        "HTML-CSS": { linebreaks: { automatic: true, width: "90% container" } },
+        "SVG": { linebreaks: { automatic: true, width: "90% container" } } ,
+
+        displayAlign: "left", displayIndent: "2em",
+        tex2jax: {inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+        displayMath: [ ['$$','$$'], ['\\\[','\\\]'] ],
+        processEscapes: true}
+
+        });
+        MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+        MathJax.InputJax.TeX.prefilterHooks.Add(function (data) {
+        if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === "#text") {next = next.nextSibling}
+        if (next && next.nodeName.toLowerCase() === "br") {next.parentNode.removeChild(next)}
+        }
+        });
+        });
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="stylesheet" type="text/css" href="vbseo_buttons.css?v=a4" />
+    <script type="text/javascript" src="vbseo/resources/scripts/vbseo_ui.js?v=a4"></script>
+
+    <script type="text/javascript">
+        YAHOO.util.Event.onDOMReady(function () {
+            vbseoui = new vBSEO_UI();
+            vbseoui.page_init(Array('postbody', 'blogbit', 'content', 'postcontainer', 'vbseo_like_postbit'), Array("php", 0));
+        });
+    </script>
+
+</head>
+<body onload="">
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+        <tr>
+            <td align="left" height="75"><img src="Riemann.png" alt="Riemann Hypothesis" border="0" /></td>
+            <td align="right" id="header_right_cell">
+            </td>
+        </tr>
+    </table>  <div align="center">
+        <div class="page" style="width:100%; text-align:left">
+            <div style="padding:0px 10px 0px 10px" align="left">
+                <div id="fb-root"></div>
+                <script>
+                    (function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=489083501131222";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                <script type="text/javascript">
+                    (function () {
+                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                        po.src = 'https://apis.google.com/js/platform.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                    })();
+                </script> <br />  <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center">
+                    <tr>
+                        <td class="alt1" width="100%">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tr valign="bottom"> <td><img src="navbits_start.gif" alt="Go Back" border="0" /></td> <td>&nbsp;</td> <td width="100%"><span class="navbar">Riemann Hypothesis</span> <span class="navbar">&gt; General Discussion</span></td> </tr>
+                                <tr>
+                                    <td class="navbar" style="font-size:10pt; padding-top:1px" colspan="3">
+                                        <img class="inlineimg" src="navbits_finallink_ltr.gif" alt="Reload this Page" border="0" /><strong>
+                                            My progress researching the distribution of prime numbers
+
+                                        </strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>   
+                </center> <br />    <table class="tborder" cellpadding="6" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
+                    <tr>
+                        <td class="tcat" width="100%">
+                            <div class="smallfont">
+
+                                &nbsp;
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>   <div id="posts">
+        <div align="center">
+            <div class="page" style="width:100%; text-align:left">
+                <div style="padding:0px 10px 0px 10px" align="left">
+                    <div id="edit156561" style="padding:0px 0px 6px 0px">
+                        <table id="post156561" class="tborder vbseo_like_postbit" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">
+                                    May 14th, 2016, 10:44 AM
+
+                                </td>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+                                    &nbsp;
+                                    #<strong>1</strong>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+                                    <div id="postmenu_156561"> Ronit_Mor </div> <div class="smallfont">Senior Member</div> <div class="smallfont">
+                                        &nbsp;<br /> <div>Joined: Sep 2012</div> <div>From: Tel Mond, Israel</div> <br /> <div>Posts: 58</div> <div>Thanks: 249</div><br />
+                                    </div>
+                                </td>
+                                <td class="alt3" id="td_post_156561" style="border-right: 1px solid #FFFFFF">
+                                    <div class="smallfont"> <strong>My progress researching the distribution of prime numbers</strong> </div> <hr size="1" style="color:#FFFFFF; background-color:#FFFFFF" />   <div id="post_message_156561">
+
+                                        Hi everyone, I'm glad to announce I have made some progress in my research of the distribution of prime numbers. As you all know, the Riemann Hypothesis is closely related to the distribution of prime numbers. Therefore I believe that my new findings are going to allow me to prove or to disprove the Riemann Hypothesis in the following weeks. I'll keep you all updated, Ronit.
+                                    </div>  <div class="vbseo_buttons" id="lkbtn_1.35737.156561"> <div class="alt2 vbseo_liked" style="display:none"></div> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+                                    <img class="inlineimg" src="http://mymathforum.com/images/math/statusicon/user_offline.gif" alt="eddybob123 is offline" border="0" />
+
+
+
+
+
+
+                                    &nbsp;
+                                </td>
+                                <td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">   </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>   <div align="center">
+            <div class="page" style="width:100%; text-align:left">
+                <div style="padding:0px 10px 0px 10px" align="left">
+                    <div id="edit156562" style="padding:0px 0px 6px 0px">
+                        <table id="post156562" class="tborder vbseo_like_postbit" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">
+                                    May 14th, 2016, 11:00 AM
+
+                                </td>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+                                    &nbsp;
+                                    #<strong>2</strong>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+                                    <div id="postmenu_156562"> eddyd123 </div> <div class="smallfont">Senior Member</div> <div class="smallfont">
+                                        &nbsp;<br /> <div>Joined: Aug 2012</div> <br /> <div>Posts: 616</div> <div>Thanks: 13</div><br />
+                                    </div>
+                                </td>
+                                <td class="alt3" id="td_post_156562" style="border-right: 1px solid #FFFFFF">
+                                    <div class="smallfont"> <strong>Re: My progress researching the distribution of prime numbers</strong> </div> <hr size="1" style="color:#FFFFFF; background-color:#FFFFFF" />   <div id="post_message_156562">
+                                        <div style="margin:20px; margin-top:5px; ">
+                                            <div class="smallfont" style="margin-bottom:2px">Quote:</div> <table cellpadding="6" cellspacing="0" border="0" width="100%">
+                                                <tr>
+                                                    <td class="alt2" style="border:1px inset">
+                                                        <div>
+                                                            Originally Posted by <strong>Ronit_Mor</strong>
+                                                        </div> <div style="font-style:italic">Hi everyone, I'm glad to announce I have made some progress in my research of the distribution of prime numbers. As you all know, the Riemann Hypothesis is closely related to the distribution of prime numbers. Therefore I believe that my new findings are going to allow me to prove or to disprove the Riemann Hypothesis in the following weeks. I'll keep you all updated, Ronit.<br /></div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>What exactly are your "new findings"? Why aren't you going into details?</br>Even being optimistic, I find this post extremely hard to believe.
+                                    </div>  <div class="vbseo_buttons" id="lkbtn_1.35737.156562"> <div class="alt2 vbseo_liked" style="display:none"></div> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+                                    <img class="inlineimg" src="http://mymathforum.com/images/math/statusicon/user_offline.gif" alt="Maschke is offline" border="0" />
+
+
+
+
+
+
+                                    &nbsp;
+                                </td>
+                                <td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">   </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>    <div align="center">
+            <div class="page" style="width:100%; text-align:left">
+                <div style="padding:0px 10px 0px 10px" align="left">
+                    <div id="edit156566" style="padding:0px 0px 6px 0px">
+                        <table id="post156566" class="tborder vbseo_like_postbit" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">
+                                    May 14th, 2016, 11:27 AM
+
+                                </td>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+                                    &nbsp;
+                                    #<strong>3</strong>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+                                    <div id="postmenu_156561"> Ronit_Mor </div> <div class="smallfont">Senior Member</div> <div class="smallfont">
+                                        &nbsp;<br /> <div>Joined: Sep 2012</div> <div>From: Tel Mond, Israel</div> <br /> <div>Posts: 58</div> <div>Thanks: 249</div><br />
+                                    </div>
+                                </td>
+                                <td class="alt3" id="td_post_156566" style="border-right: 1px solid #FFFFFF">
+                                    <div class="smallfont"> <strong>Re: My progress researching the distribution of prime numbers</strong> </div> <hr size="1" style="color:#FFFFFF; background-color:#FFFFFF" />   <div id="post_message_156566">
+
+                                        The reason I am not going into details is that I believe I'm taking the final steps towards proving/disproving the Riemann Hypothesis. So I cannot share too much without having the risk of someone else solving the problem before I do. I hope you can understand. In the meantime, I'll just say my findings make it possible to determine the distribution of prime numbers in a certain range with great precision.
+                                    </div>  <div class="vbseo_buttons" id="lkbtn_1.35737.156566"> <div class="alt2 vbseo_liked" style="display:none"></div> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+                                    <img class="inlineimg" src="http://mymathforum.com/images/math/statusicon/user_offline.gif" alt="eddybob123 is offline" border="0" />
+
+
+
+
+
+
+                                    &nbsp;
+                                </td>
+                                <td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">   </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>    <div align="center">
+            <div class="page" style="width:100%; text-align:left">
+                <div style="padding:0px 10px 0px 10px" align="left">
+                    <div id="edit156569" style="padding:0px 0px 6px 0px">
+                        <table id="post156569" class="tborder vbseo_like_postbit" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">
+                                    May 14th, 2016, 11:42 AM
+
+                                </td>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+                                    &nbsp;
+                                    #<strong>4</strong>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+                                    <div id="postmenu_156569"> RCGreathouse </div> <div class="smallfont">New Member</div> <div class="smallfont">
+                                        &nbsp;<br />
+                                    </div> <div class="smallfont">
+                                        &nbsp;<br /> <div>Joined: Nov 2015</div> <div>From: UTC -5</div> <br /> <div>Posts: 16</div> <div>Thanks: 4</div><br /></div>
+                                    </div>
+                                </td>
+                                <td class="alt3" id="td_post_156569" style="border-right: 1px solid #FFFFFF">
+                                    <div class="smallfont"> <strong>Re: My progress researching the distribution of prime numbers</strong> </div> <hr size="1" style="color:#FFFFFF; background-color:#FFFFFF" />   <div id="post_message_156569">
+
+                                        obvious troll is obvious
+                                    </div>  <div class="vbseo_buttons" id="lkbtn_1.35737.156569"> <div class="alt2 vbseo_liked" style="display:none"></div> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+                                    <img class="inlineimg" src="http://mymathforum.com/images/math/statusicon/user_offline.gif" alt="CRGreathouse is offline" border="0" />
+
+
+
+
+
+
+                                    &nbsp;
+                                </td>
+                                <td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">   </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>    <div align="center">
+            <div class="page" style="width:100%; text-align:left">
+                <div style="padding:0px 10px 0px 10px" align="left">
+                    <div id="edit156581" style="padding:0px 0px 6px 0px">
+                        <table id="post156581" class="tborder vbseo_like_postbit" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">
+                                    May 14th, 2016, 12:32 PM
+
+                                </td>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+                                    &nbsp;
+                                    #<strong>5</strong>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+                                    <div id="postmenu_156581"><font color="#238C00" style="font-weight:bold">mathbalarka</font> </div> <div class="smallfont">Moderator</div>  <div class="smallfont">
+                                        &nbsp;<br />
+                                    </div> <div class="smallfont">
+                                        &nbsp;<br /> <div>Joined: Mar 2012</div> <div>From: India, West Bengal</div> <br /> <div>Posts: 3,871</div> <div>Thanks: 86</div><br /> <div>Math Focus: General Discussion</div>
+                                    </div>
+                                </td>
+                                <td class="alt3" id="td_post_156581" style="border-right: 1px solid #FFFFFF">
+                                    <div class="smallfont"> <strong>Re: My progress researching the distribution of prime numbers</strong> </div> <hr size="1" style="color:#FFFFFF; background-color:#FFFFFF" />   <div id="post_message_156581">
+                                        <div class="smallfont" style="margin-bottom:2px">Quote:</div> <table cellpadding="6" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td class="alt2" style="border:1px inset">
+                                                    <div>
+                                                        Originally Posted by <strong>eddyd123</strong>
+                                                    </div> <div style="font-style:italic">What exactly are your "new findings"? Why aren't you going into details?<br/>Even being optimistic, I find this post extremely hard to believe. <br /></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    <br/>
+                                        <div class="smallfont" style="margin-bottom:2px">Quote:</div> <table cellpadding="6" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                                <td class="alt2" style="border:1px inset">
+                                                    <div>
+                                                        Originally Posted by <strong>RCGreathouse</strong>
+                                                    </div> <div style="font-style:italic">obvious troll is obvious<br /></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    <br/>
+                                        You must be new here - Ronit is one of the most brilliant users our community has seen. She has proven herself here many times and doesn't need to be questioned every time she has made a discovery.
+                                        <br />
+                                        Ronit, I am very glad to hear the news. Do keep us updated.<br />
+                                        .
+                                    </div>  <div class="vbseo_buttons" id="lkbtn_1.35737.156581"> <div class="alt2 vbseo_liked" style="display:none"></div> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+                                    <img class="inlineimg" src="http://mymathforum.com/images/math/statusicon/user_offline.gif" alt="mathbalarka is offline" border="0" />
+
+
+
+
+
+
+                                    &nbsp;
+                                </td>
+                                <td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">   </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>    <div align="center">
+            <div class="page" style="width:100%; text-align:left">
+                <div style="padding:0px 10px 0px 10px" align="left">
+                    <div id="edit156590" style="padding:0px 0px 6px 0px">
+                        <table id="post156590" class="tborder vbseo_like_postbit" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">
+                                    May 14th, 2016, 01:53 PM
+
+                                </td>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+                                    &nbsp;
+                                    #<strong>6</strong>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+                                    <div id="postmenu_156590"> joexier </div> <div class="smallfont">Novice member</div> <div class="smallfont">
+                                        &nbsp;<br /> <div>Joined: Sep 2014</div> <div>From: British Columbia, Canada</div> <br /> <div>Posts: 227</div> <div>Thanks: 18</div><br />
+                                    </div>
+                                </td>
+                                <td class="alt3" id="td_post_156590" style="border-right: 1px solid #FFFFFF">
+                                    <div class="smallfont"> <strong>Re: My progress researching the distribution of prime numbers</strong> </div> <hr size="1" style="color:#FFFFFF; background-color:#FFFFFF" />   <div id="post_message_156590">
+
+                                        So, assuming all of this is right, you mean that you're keeping your findings to yourself, possibly setting the entire mathematical community back, just to make sure YOU are the first to solve the mystery?? So this is what greed does to people... Let's just hope this bitch dies before she finds anything else.
+                                    </div>  <div class="vbseo_buttons" id="lkbtn_1.35737.156590"> <div class="alt2 vbseo_liked" style="display:none"></div> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+                                    <img class="inlineimg" src="http://mymathforum.com/images/math/statusicon/user_offline.gif" alt="eddybob123 is offline" border="0" />
+
+
+
+
+
+
+                                    &nbsp;
+                                </td>
+                                <td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">   </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>    <div align="center">
+            <div class="page" style="width:100%; text-align:left">
+                <div style="padding:0px 10px 0px 10px" align="left">
+                    <div id="edit156596" style="padding:0px 0px 6px 0px">
+                        <table id="post156596" class="tborder vbseo_like_postbit" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">
+                                    May 14th, 2016, 03:35 PM
+
+                                </td>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+                                    &nbsp;
+                                    #<strong>7</strong>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+                                    <div id="postmenu_156561"> Ronit_Mor </div> <div class="smallfont">Senior Member</div> <div class="smallfont">
+                                        &nbsp;<br /> <div>Joined: Sep 2012</div> <div>From: Tel Mond, Israel</div> <br /> <div>Posts: 58</div> <div>Thanks: 249</div><br />
+                                    </div>
+                                </td>
+                                <td class="alt3" id="td_post_156596" style="border-right: 1px solid #FFFFFF">
+                                    <div class="smallfont"> <strong>Re: My progress researching the distribution of prime numbers</strong> </div> <hr size="1" style="color:#FFFFFF; background-color:#FFFFFF" />   <div id="post_message_156596">
+                                        I am disturbed to see some of the comments here, and I am even more disturbed to have received death threats to my personal phone, when I don't recall ever sharing my number here. Whoever is responsible for that, this is the last warning before I involve the police.
+                                    </div>  <div class="vbseo_buttons" id="lkbtn_1.35737.156596"> <div class="alt2 vbseo_liked" style="display:none"></div> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+                                    <img class="inlineimg" src="http://mymathforum.com/images/math/statusicon/user_offline.gif" alt="johnr is offline" border="0" />
+
+
+
+
+
+
+                                    &nbsp;
+                                </td>
+                                <td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">   </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>    <div align="center">
+            <div class="page" style="width:100%; text-align:left">
+                <div style="padding:0px 10px 0px 10px" align="left">
+                    <div id="edit156598" style="padding:0px 0px 6px 0px">
+                        <table id="post156598" class="tborder vbseo_like_postbit" cellpadding="6" cellspacing="0" border="0" width="100%" align="center">
+                            <tr>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">
+                                    May 14th, 2016, 03:55 PM
+
+                                </td>
+                                <td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+                                    &nbsp;
+                                    #<strong>8</strong>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">
+                                    <div id="postmenu_156598">alastbirsk41</div> <div class="smallfont">New member</div> <div class="smallfont">
+                                        &nbsp;<br /> <div>Joined: Feb 2016</div> <br /> <div>Posts: 28</div> <div>Thanks: 1</div><br />
+                                    </div>
+                                </td>
+                                <td class="alt3" id="td_post_156598" style="border-right: 1px solid #FFFFFF">
+                                    <div class="smallfont"> <strong>Re: My progress researching the distribution of prime numbers</strong> </div> <hr size="1" style="color:#FFFFFF; background-color:#FFFFFF" />   <div id="post_message_156598">
+
+                                        LOL, I hope whoever gives you these threats won't dissapoint
+                                    </div>  <div class="vbseo_buttons" id="lkbtn_1.35737.156598"> <div class="alt2 vbseo_liked" style="display:none"></div> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+                                    <img class="inlineimg" src="http://mymathforum.com/images/math/statusicon/user_offline.gif" alt="Dougy is offline" border="0" />
+
+
+
+
+
+
+                                    &nbsp;
+                                </td>
+                                <td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">   </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>   <div align="center">
+        </div>  <br/> <br /> <div align="center">
+                <div class="smallfont" align="center">
+                    Copyright &copy; 2016 Riemann Hypothesis. All rights reserved.
+                </div> <div class="smallfont" align="center"> </div>
+            </div>
+        </form>
+        <script type="text/javascript">
+            var vglnk = {
+                api_url: '//api.viglink.com/api',
+                key: '4ca1c8ebe982149656ef795be05c6fef'
+            };
+
+            (function (d, t) {
+                var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+                s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+                         '//cdn.viglink.com/api') + '/vglnk.js';
+                var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+            }(document, 'script'));
+        </script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-48942637-2', 'mymathforum.com');
+            ga('send', 'pageview');
+
+        </script>
+        <script type="text/javascript">
+            var _qevents = _qevents || [];
+
+            (function () {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);
+            })();
+
+            _qevents.push({
+                qacct: "p-c8gd8rZW_J6bE"
+            });
+        </script> <noscript> <div style="display:none;"> <img src="//pixel.quantserve.com/pixel/p-c8gd8rZW_J6bE.gif" border="0" height="1" width="1" alt="Quantcast" /> </div> </noscript>
+        <script type="text/javascript">
+ <!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//--> </script>  <div style="display:none">   </div> 
+
+        <script type="text/javascript">
+            //<![CDATA[
+
+            window.orig_onload = window.onload;
+            window.onload = function () {
+                var cpost = document.location.hash.substring(1); var cpost2 = ''; if (cpost && (typeof fetch_object != 'undefined')) { var ispost = cpost.substring(0, 4) == 'post'; if (ispost) cpost2 = 'post_' + cpost.substring(4); if ((cobj = fetch_object(cpost)) || (cobj = fetch_object(cpost2))) { cobj.scrollIntoView(true); } else if (ispost) { cpostno = cpost.substring(4, cpost.length); if (parseInt(cpostno) > 0) { location.replace('http://mymathforum.com/showthread.php?p=' + cpostno); }; } }
+
+                if (typeof window.orig_onload == "function") window.orig_onload();
+            }
+
+            //]]>
+        </script>
+</body>
+</html>

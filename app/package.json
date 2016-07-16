@@ -1,0 +1,23 @@
+{
+  "name": "The Room",
+  "version": "1.1.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "keywords": [
+    "Electron",
+    "Music",
+    "Cats",
+    "Bla"
+  ],
+  "author": "Ron Hasson",
+  "homepage": "https://google.com",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.0"
+  },
+  "dependencies": {
+    "id3js": "^1.1.3"
+  }
+}

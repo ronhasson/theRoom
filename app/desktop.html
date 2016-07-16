@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>desktop - Ron OS</title>
+    <LINK href="deskCSS.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="font-awesome-4.6.3\css\font-awesome.min.css">
+</head>
+
+<body>
+    <div id="topbar">
+        <span style="float:left;">Ronit PC</span>
+        <span id="clock" class="tooltips">12:00<span>Tooltip</span></span>
+        <i style="float:right;margin:0.2vh; margin-left:1vw; margin-right:1vw; font-size:1.7vh" class="fa fa-power-off" aria-hidden="true"></i>
+        <i style="float:right;font-size:1.7vh;margin:0.2vh;" class="fa fa-wifi" aria-hidden="true"></i>
+    </div>
+    <div id="bottom">
+        <div id="bottombar">
+            <a style="margin-left:2.5vw" onclick="openWindow(650, 1300, 'file://C:/Users/ron/Desktop/The Room/resources/app/form.html', true, true);"><img src="chromeLogo.png" /></a>
+            <a style="margin-left:9.5vw" onclick="openWindow(550, 550, 'file://C:/Users/ron/Desktop/The Room/resources/app/notepad.html', true, true);"><img src="notepadLogo.png" /></a>
+            <a style="margin-left:16.5vw" onclick="openWindow(800, 600, 'file://C:/Users/ron/Desktop/The Room/resources/app/calculator.html', true, true);"><img src="calcLogo.png" /></a>
+        </div>
+    </div>
+</body>
+<script>
+    var remote = require('remote');
+    var BrowserWindow = remote.require('browser-window');
+    startTime();
+    var ticks = 0;
+    const {
+        Menu,
+        MenuItem
+    } = remote;
+
+    const menu = new Menu();
+
+    menu.append(new MenuItem({
+        label: 'Sherlock OS by Ron'
+    }));
+    menu.append(new MenuItem({
+        type: 'separator'
+    }));
+    menu.append(new MenuItem({
+        label: 'Change Background',
+        submenu: [{
+            label: 'Rad Purple',
+            type: 'radio',
+            checked: true,
+            click(item, focusedWindow) {
+                if (focusedWindow) document.body.style.backgroundImage = "url('bg.jpg')";
+            }
+        }, {
+            label: 'Blue',
+            type: 'radio',
+            click(item, focusedWindow) {
+                if (focusedWindow) document.body.style.backgroundImage = "url('SlimBlue.jpg')";
+            }
+        }, {
+            label: 'Vibrante Blue',
+            type: 'radio',
+            click(item, focusedWindow) {
+                if (focusedWindow) document.body.style.backgroundImage = "url('SatuBlue.jpg')";
+            }
+        }, {
+            label: 'Rad Blue',
+            type: 'radio',
+            click(item, focusedWindow) {
+                if (focusedWindow) document.body.style.backgroundImage = "url('BlueCyan.jpg')";
+            }
+        }, {
+            label: 'green',
+            type: 'radio',
+            click(item, focusedWindow) {
+                if (focusedWindow) document.body.style.backgroundImage = "url('GreenSlim.jpg')";
+            }
+        }, {
+            label: 'Desert',
+            type: 'radio',
+            click(item, focusedWindow) {
+                if (focusedWindow) document.body.style.backgroundImage = "url('desWhite.jpg')";
+            }
+        }, {
+            label: 'Inverted Desert',
+            type: 'radio',
+            click(item, focusedWindow) {
+                if (focusedWindow) document.body.style.backgroundImage = "url('InvertedDes.jpg')";
+            }
+        }, {
+            label: 'Clasic',
+            type: 'radio',
+            click(item, focusedWindow) {
+                if (focusedWindow) document.body.style.backgroundImage = "url('bg_old.jpg')";
+            }
+        }]
+    }));
+
+    window.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        menu.popup(remote.getCurrentWindow());
+    }, false);
+
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        m = checkTime(m);
+        h = checkTime(h);
+        document.getElementById('clock').innerHTML =
+            h + ":" + m;
+        ticks += 1;
+        console.log(ticks + " , " + Math.floor(ticks % 60) + " , " + Math.floor(ticks / 60))
+        if (ticks % (60*15) == 0) {
+            openWindow(200, 600, 'file://C:/Users/ron/Desktop/The Room/resources/app/alert.html?t='+Math.floor(ticks / 60), false, false);
+        }
+        var t = setTimeout(startTime, 1000);
+    }
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i
+        }; // add zero in front of numbers < 10
+        return i;
+    }
+
+    function openWindow(h, w, url, res, frame) {
+        leftOffset = (screen.width / 2) - w / 2;
+        topOffset = (screen.height / 2) - h / 2;
+        //window.open(url, "Rome", "resizable,scrollbars, frame, alwaysOnTop");
+        var win = new BrowserWindow({
+            resizable: res,
+            scrollbars: frame,
+            fullscreen: false,
+            frame: frame,
+            alwaysOnTop: true,
+            width: w,
+            height: h
+        })
+        win.loadURL(url)
+    }
+</script>
+</html>
